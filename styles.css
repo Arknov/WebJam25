@@ -1,28 +1,46 @@
 h1 {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    avenir next,
-    avenir,
-    segoe ui,
-    helvetica neue,
-    helvetica,
-    Cantarell,
-    Ubuntu,
-    roboto,
-    noto,
-    arial,
-    sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 24px 0;
+}
+/* The animation code */
+@keyframes myAnimation {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 500px;
+  }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* The element to apply the animation to */
+img {
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 67;
+}
+
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bold-paragraph {
-  color: #ff87a6;
+  color: orange;
 }
 
 #bold {
-  background-color: #ff87a6;
-  color: white;
+  background-color: black;
+  color: green;
 }
 
 img {
